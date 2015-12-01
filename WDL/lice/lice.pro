@@ -23,12 +23,15 @@ LIBS += -bundle
 
 LIBS += -framework Cocoa -framework Carbon
 
-INCLUDEPATH += ../../WDL/IPlug ../../IPlugExamples/MyFirstPlugin
+INCLUDEPATH += \
+    ../../WDL/IPlug \
+    .
 
 DEFINES += VST_API
 
-SOURCES += lice.cpp \
-    lice_arc.cpp \
+SOURCES += \
+    ../../WDL/lice/lice.cpp \
+    ../../WDL/lice/lice_arc.cpp \
     lice_bmp.cpp \
     lice_colorspace.cpp \
     lice_image.cpp \
